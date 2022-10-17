@@ -13,7 +13,11 @@ const Header: React.FC = () => {
   function gotoOnlineVersion() {
     const query = getSearchObj();
     if (typeof window !== 'undefined') {
-      window.open(`https://xiguan00yu.github.io/resume/?user=${query.user}`);
+      window.open(
+        `https://xiguan00yu.github.io/resume/?user=${
+          query.user || 'xiguan00yu'
+        }`
+      );
     }
   }
 

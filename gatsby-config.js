@@ -15,7 +15,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingIds: ['G-2K3PH6MKBG'],
+        trackingIds: ['G-GV3G0SLGXD'],
       },
     },
     {
