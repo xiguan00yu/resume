@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <footer>
       <div>
-        <div>
+        <div style={{ textAlign: 'center' }}>
           <span className="">Build with 💻</span>
           <span className="author">
             by
@@ -24,7 +24,8 @@ const Footer: React.FC = () => {
               {user}
             </span>
           </span>
-          <span className="">/ Made with ❤️</span>
+          <br></br>
+          <span className="">Made with ❤️</span>
           <span className="author">
             by
             <span
@@ -37,6 +38,7 @@ const Footer: React.FC = () => {
             >
               visiky
             </span>
+            , thank you and a great help!
           </span>
         </div>
 
