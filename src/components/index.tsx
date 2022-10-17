@@ -21,7 +21,7 @@ import './index.less';
 export const Page: React.FC = () => {
   const lang = getLanguage();
   const i18n = getLocale();
-  const user = getSearchObj().user || 'visiky';
+  const user = getSearchObj().user || 'linker';
 
   const [, mode, changeMode] = useModeSwitcher({});
 
@@ -74,8 +74,8 @@ export const Page: React.FC = () => {
   };
 
   useEffect(() => {
-    const user = (query.user || '') as string;
-    const branch = (query.branch || 'master') as string;
+    const user = ((query.user || '') as string) || 'xiguan00yu';
+    const branch = (query.branch || 'main') as string;
     const mode = query.mode;
 
     function store(data) {
@@ -222,16 +222,11 @@ export const Page: React.FC = () => {
                       cursor: 'pointer',
                     }}
                     onClick={() => {
-                      const user = query.user || 'visiky';
-                      window.open(`https://github.com/${user}/${user}`);
+                      const user = query.user || 'linker';
+                      window.open(`https://github.com/visiky/visiky`);
                     }}
                   >
-                    {`${query.user || 'visiky'}'s resumeInfo`}
-                  </span>
-                  <span>
-                    {`（https://github.com/${query.user || 'visiky'}/${
-                      query.user || 'visiky'
-                    }/blob/${query.branch || 'master'}/resume.json）`}
+                    {`here`}
                   </span>
                 </span>
               </span>
